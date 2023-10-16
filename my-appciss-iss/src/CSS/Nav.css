@@ -1,0 +1,68 @@
+
+body {
+  background-color: rgba(0, 0, 0, 1);
+  font-weight: 600;
+
+  color: white;
+}
+header{
+  background-color: seashell;
+  padding: 20px;
+}
+.navbar{
+  background-color: seashell;
+
+  margin-left: 200px;
+
+
+  
+
+  
+}
+
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  
+ 
+}
+.logo{
+  width: 130px;
+  padding: 0.5rem 0;
+  float:left;
+  margin-left: 0px;
+ 
+}
+.cisslogo{
+  float: left;
+  margin-left: 0px;
+  width: 200px;
+}
+.listitem{
+ 
+ text-decoration: none;
+  list-style: none;
+  margin: 20px;
+  padding: 6px 6px;
+
+
+ align-items: center;
+ justify-content: center;
+
+}
+.registerbtn{
+
+  color: white;
+ 
+  border-radius: 5px;
+  float: right;
+  cursor: pointer;
+  margin-right: 0%;
+ 
+
+}
+.register{
+ float: right;
+ margin-left: 300px;
+}
