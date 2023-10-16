@@ -10,14 +10,14 @@
   
       <div id="container">
          <header>Registration</header>
-         <form action="register.inc.php" method="post">
+         <form action="Includes/register.inc.php" method="post">
             <fieldset>
                <br/>
                <input type="text" name="name" id="name" placeholder="Name" required autofocus >
                <br/><br/>
                <input type="text" name="stuid" id="stuid" placeholder="Student ID" required  >
                <br/><br/>
-               <input type="text" name="stbatchid" id="batch" placeholder="Batch" required  >
+               <input type="text" name="st_batch" id="batch" placeholder="Batch" required  >
                <br/><br/>
                <input type="text" name="degree" id="degree" placeholder="Degree" required  >
                <br/><br/>
