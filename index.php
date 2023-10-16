@@ -10,7 +10,7 @@
   
       <div id="container">
          <header>Registration</header>
-         <form method="post">
+         <form action="register.inc.php" method="post">
             <fieldset>
                <br/>
                <input type="text" name="name" id="name" placeholder="Name" required autofocus >
