@@ -2,6 +2,9 @@ import React from 'react'
 
 export default function faq() {
   return (
-    <div>faq</div>
+    <div>
+      <h1>FAQ</h1>
+      <p>FAQ</p>  
+    </div>
   )
 }

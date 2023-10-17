@@ -132,6 +132,17 @@ margin: 50px 10px 10px 10px;
 
 
 }
+.button{
+  float: right;
+  margin-left: 100px;
+ 
+}
+.reg-button{
+  float: right;
+  margin-left: 100px;
+
+ 
+}
 
 
 @media screen and (max-width: 960px) {

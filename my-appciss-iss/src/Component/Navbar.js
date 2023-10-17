@@ -76,7 +76,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/"
+                to="/" 
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
@@ -87,36 +87,61 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/about"
+                to="/Speakers"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                About
+                Speakers
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/blog"
+                to="/Sponcers"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                Blog
+                Sponcers
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/contact"
+                to="/Team"
                 activeClassName="active"
                 className="nav-links"
                onClick={click ? handleClick : null}
               >
-                Contact Us
+                Commiunity
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/faq"
+                activeClassName="activeItem"
+                className="nav-links"
+               onClick={click ? handleClick : null}
+              >
+                FAQ
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <div className='reg-button'>
+
+              <div className='button'>
+                Register
+                </div>
+            </div>
+                
+            
+              
+             
+            </li>
+        
         
          
             
