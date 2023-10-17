@@ -8,6 +8,7 @@ import Register from "./Component/Register";
 import Team from "./Component/Team";
 import faq from "./Component/faq";
 import Navbar from "./Component/Navbar";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,6 +23,7 @@ const App = () => {
     <Router>
       
         <Navbar />
+
 
         <Routes>
           <Route path="/" component={Home} />

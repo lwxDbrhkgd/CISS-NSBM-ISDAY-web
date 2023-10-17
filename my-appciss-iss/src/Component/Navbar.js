@@ -2,11 +2,23 @@ import React from 'react'
 // import islogo from '../Assets/islogo.jpeg';
 // import {  NavLink } from 'react-router-dom';
 import '../CSS/Nav.css';
+import'../CSS/style.css';
 
 //Import Boostrap and CSS
-import Nav from 'react-bootstrap/Nav';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';  
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavLink } from 'react-router-dom';
+
+import islogo from '../Assets/islogo.jpeg';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Index from '../PHP/index.php';
+
+
+
+
+
+
+
 
 
 
@@ -17,7 +29,7 @@ import Button from 'react-bootstrap/Button';
 //  <header>
 //   <div className='container container-flex'>
 //     <div className='cisslogo'>
-//      <img className='logo' src={islogo} alt='logo' /> 
+//   
 //     </div>
 //     <div className='navbar'>
 //       <NavLink  to="/" className="listitem">Home</NavLink>
@@ -38,63 +50,104 @@ import Button from 'react-bootstrap/Button';
 
 
 
-function FillExample() {
+function NavBar() {
+  const [click, setClick] = React.useState(false);
+
+  const handleClick = () => setClick(!click);
+  const Close = () => setClick(false);
+  
   return (
-    <Nav fill variant="tabs" defaultActiveKey="/home">
-      <Nav.Item>
-        <Nav.Link href="/home">Active</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="link-1">Loooonger NavLink</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="link-2">Link</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="disabled" disabled>
-          Disabled
-        </Nav.Link>
-      </Nav.Item>
-    </Nav>
-  );
-}
-export function JustifiedExample() {
-  return(
-    <FillExample/>
-  );
-}
+   
+ 
+   
+    
+    <div className='container container-flex'>
+    <div>
+     <div className={click ? "main-container" : ""}  onClick={()=>Close()} />
+      <nav className="navbar" onClick={e => e.stopPropagation()}>
+        <div className="nav-container">
+          <NavLink exact to="/" className="nav-logo">
+          <div className='cisslogo'>
+          <img className='logo' src={islogo} alt='logo' /> 
+          </div>
+            <i className="fa fa-code"></i>
+          </NavLink>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/about"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                About
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/blog"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                Blog
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/contact"
+                activeClassName="active"
+                className="nav-links"
+               onClick={click ? handleClick : null}
+              >
+                Contact Us
+              </NavLink>
+            </li>
+
+           <div className='button'>
+           <BrowserRouter>
+      <Routes>
+        <Route path="/index" element={<Index/>}/>
+       
+       
+      </Routes>
+    </BrowserRouter>
+           </div>
 
 
 
-function herosection() {
-  return (
-    <Card>
-      <Card.Header>
-        <Nav variant="pills" defaultActiveKey="#first">
-          <Nav.Item>
-            <Nav.Link href="#first">Active</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="#link">Link</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="#disabled" disabled>
-              Disabled
-            </Nav.Link>
-          </Nav.Item>
-        </Nav>
-      </Card.Header>
-      <Card.Body>
-        <Card.Title>Special title treatment</Card.Title>
-        <Card.Text>
-          With supporting text below as a natural lead-in to additional content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+
+     
+         
+           
+          </ul>
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
+          </div>
+        </div>
+      </nav>
+    </ div>
+    </div>
+   
+           
+
   );
   
-
 }
-export default herosection;
+export default NavBar;
+
 
