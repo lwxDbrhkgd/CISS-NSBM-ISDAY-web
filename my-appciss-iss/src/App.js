@@ -10,6 +10,13 @@ import faq from "./Component/faq";
 import Navbar from "./Component/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+/* The following line can be included in a src/App.scss */
+
+
+// or less ideally
+
+
 const App = () => {
   return (
     <Router>
