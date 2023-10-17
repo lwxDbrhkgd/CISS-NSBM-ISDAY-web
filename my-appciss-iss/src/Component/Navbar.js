@@ -9,9 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from 'react-router-dom';
 
 import islogo from '../Assets/islogo.jpeg';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Index from '../PHP/index.php';
+
+
 
 
 
@@ -117,17 +117,12 @@ function NavBar() {
                 Contact Us
               </NavLink>
             </li>
+        
+         
+            
 
-           <div className='button'>
-           <BrowserRouter>
-      <Routes>
-        <Route path="/index" element={<Index/>}/>
-       
-       
-      </Routes>
-    </BrowserRouter>
-           </div>
 
+      
 
 
 

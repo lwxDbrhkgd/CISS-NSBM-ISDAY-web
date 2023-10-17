@@ -9,9 +9,13 @@ import Team from "./Component/Team";
 import faq from "./Component/faq";
 import Navbar from "./Component/Navbar";
 
+import Herosec from "./Component/herosec";
+
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 /* The following line can be included in a src/App.scss */
 
 
@@ -24,6 +28,8 @@ const App = () => {
       
         <Navbar />
 
+        <Herosec/>
+
 
         <Routes>
           <Route path="/" component={Home} />
@@ -32,7 +38,12 @@ const App = () => {
           <Route path="/Sponcers" component={Sponcers} />
           <Route path="/Team" component={Team} />
           <Route path="/faq" component={faq} />
+          
+          
+
         </Routes>
+
+        
        
      
     </Router>
