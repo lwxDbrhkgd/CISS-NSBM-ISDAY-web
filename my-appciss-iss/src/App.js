@@ -30,6 +30,8 @@ const App = () => {
 
         <Herosec/>
 
+        <Speakers />
+
 
         <Routes>
           <Route path="/" component={Home} />
@@ -47,6 +49,8 @@ const App = () => {
        
      
     </Router>
+
+
   );
 };
 

@@ -1,6 +1,38 @@
+*{
+  margin: 0px;
+}
+
 .head{
-  margin-top: 100px;
-  margin-bottom: 100px;
+  
   text-align: center;
-  position: inherit;
+
+  font-size: large;
+top: 20%;
+position: absolute;
+right: 2%;
+width: 100%;
+font-size: 8rem;
+z-index: 2;
+color: aliceblue;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-display: swap;
+  
+}
+.teamimg{
+  width: 100%;
+  height: 20%;
+  margin-top: 0px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.rectangle {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 160, 90, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Position this element on top of other elements */
 }
