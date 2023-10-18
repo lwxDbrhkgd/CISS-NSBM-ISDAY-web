@@ -1,5 +1,6 @@
 import React from 'react'
 import '../CSS/card.css'
+import banuka from '../Assets/banuka.jpg'
 
 export default function card() {
   return (
@@ -7,7 +8,7 @@ export default function card() {
     <div class="box1 box">
     <div class="content">
       <div class="image">
-        {/* <img src="https://i.postimg.cc/bryMmCQB/profile-image.jpg" alt="Profile Image"> */}
+        <img src={banuka} alt="" />
       </div>
       <div class="level">
         <p>PRO</p>

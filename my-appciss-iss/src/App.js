@@ -32,11 +32,13 @@ const App = () => {
 
         <Speakers />
 
+        <Sponcers />
+
 
         <Routes>
           <Route path="/" component={Home} />
           <Route path="/Register" component={Register} />
-          <Route path="/Spekers" component={Speakers} />
+          <Route path="/Component/Speakers" component={Speakers} />
           <Route path="/Sponcers" component={Sponcers} />
           <Route path="/Team" component={Team} />
           <Route path="/faq" component={faq} />

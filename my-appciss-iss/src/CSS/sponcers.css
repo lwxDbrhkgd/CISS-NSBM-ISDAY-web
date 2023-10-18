@@ -1,0 +1,23 @@
+body{
+  font: 15px helvetica,arial,freesans,clean,sans-serif;
+ background:#f4f4f4
+}
+#waveform{
+  xbackground: rgba(0,0,0,0.8);
+}
+
+.ppcont{position:relative;width:450px;height:auto;margin:auto;background:#fff;padding:10px;border-radius:5px}
+.ppcont_art{height:90px;width:90px;float:right;margin-bottom:10px;}
+.ppcont .ftr{text-transform:uppercase;font-size:9px;letter-spacing:1px;background:limegreen;width:76px;text-align:center;padding:4px;border-radius:2px;color:#fff}
+.ppcont h5{margin:0;color:#999}
+.ppcont h2{margin-bottom:3px;letter-spacing:-.4px;}
+.pp{height:46px;overflow:hidden;max-width:100%;width:450px;}
+
+button:active{
+  outline: none;
+  border-top: 4px solid #eee;
+  border-bottom: 2px solid #777;
+}
+button:focus{
+  outline: none;
+}
